@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+:root{
+    --primary-color : rgba(242, 79, 22, 1);
+    --secondary-color : #cb3b3b;
+    --highlight-color : #ffa45c;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* Start Header */
+header{
+    height: 100vh;
+    background: 
+    linear-gradient(
+        30deg,
+        transparent 90%,
+        var(--primary-color)
+    )
+    ,url('../assets/img/header4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* Start navbar */
+.navbar{
+    background: linear-gradient(
+        transparent,
+        var(--primary-color)
+    );
+    color: #f4f4f4;
+}
+.menuitems{
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 15px;
+}
+.menuitems:hover{
+    color: #333;
+}
+.navbuttons{
+    border: 5px solid var(--highlight-color);
+}
+.line1s,.line2s,.line3s{
+    width: 25px;
+    height: 3px;
+    background: var(--secondary-color);
+    margin: 6px 0;
+
+    transition: all 0.5s;
+}
+.navactives .line1s{
+    transform: translateY(9px) rotate(-45deg);
+}
+.navactives .line2s{
+    opacity: 0;
+}
+.navactives .line3s{
+    transform: translateY(-9px) rotate(45deg);
+}
+/* End navbar */
+
+/* End Header */
