@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
 
+*{
+    box-sizing: border-box;
+}
 :root{
     --primary-color : rgba(242, 79, 22, 1);
     --secondary-color : #cb3b3b;
@@ -11,15 +14,17 @@ body{
 /* Start Header */
 header{
     height: 100vh;
-    background: 
+    /* background: 
     linear-gradient(
-        30deg,
-        transparent 90%,
-        var(--primary-color)
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.3)
     )
-    ,url('../assets/img/header4.jpg');
+    ,url('../assets/img/header5.jpg'); */
+    background: url('../assets/img/bg/headerbg.jpg');
     background-size: cover;
     background-position: center;
+
+    position: relative;
 }
 /* Start navbar */
 .navbar{
@@ -38,7 +43,7 @@ header{
     margin: 0 15px;
 }
 .menuitems:hover{
-    color: #333;
+    color: var(--highlight-color);
 }
 .navbuttons{
     border: 5px solid var(--highlight-color);
@@ -46,7 +51,7 @@ header{
 .line1s,.line2s,.line3s{
     width: 25px;
     height: 3px;
-    background: var(--secondary-color);
+    background: var(--highlight-color);
     margin: 6px 0;
 
     transition: all 0.5s;
@@ -62,4 +67,232 @@ header{
 }
 /* End navbar */
 
+/* Start banner */
+.banners{
+    width: 80%;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.3)
+    );
+    padding: 20px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.list-inline-item{
+    margin: 0 !important;
+}
+.checks label{
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.checks input{
+    width: 200px;
+    background: none;
+    border: 1px solid #eee;
+    color: #fff;
+    padding: 10px;
+}
+.checks input:focus{
+    outline: 0;
+}
+.checks input::placeholder{
+    color: #eee;
+}
+.inputparents,.guestsparents{
+    position: relative;
+}
+.inputparents::after{
+    content: '\f133';
+    font-family: 'Font Awesome 5 Free';
+
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.guestsparents{
+    position: relative;
+}
+.guestbtns{
+    background: none;
+    color: #fff;
+    height: 50%;
+    border: 0;
+
+    position: absolute;
+}
+.guestbtns.upbtns{
+    right: 0;
+    top: 0;
+}
+.guestbtns.downbtns{
+    right: 0;
+    bottom: 0;
+}
+/* End banner */
+
 /* End Header */
+
+/* Start Adv Section */
+.advsections{
+    background: linear-gradient(
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+.hexagonboxes{
+    width: 150px;
+    height: 150px;
+    background-color: var(--highlight-color);
+    /* border: 3px solid var(--highlight-color); */
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    shape-outside: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    margin: 2px;
+
+    /* background-image: url('../assets/img/bg/bagan.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+.fromlefts{
+    animation: fromleftani 0.9s;
+}
+.fromrights{
+    animation: fromrightani 0.9s;
+}
+.fromtops{
+    animation: fromtopani 0.9s;
+}
+.frombottoms{
+    animation: frombottomani 0.9s;
+}
+
+@keyframes fromleftani {
+    0%{
+        opacity: 0;
+        transform: translate(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes fromrightani {
+    0%{
+        opacity: 0;
+        transform: translate(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes fromtopani {
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes frombottomani {
+    0%{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+/* End Adv Section */
+
+/* Start Services Section */
+.servicesboxes{
+    height: 500px;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transition: all 0.5s;
+    transform-origin: bottom;
+
+    position: relative;
+}
+.servicesboxes:hover{
+    transform: scaleY(1.03);
+}
+.servicesboxes:hover i,.servicesboxes:hover h3{
+    opacity: 0;
+}
+.servicesboxes i{
+    margin-bottom: 20px;
+    color: var(--highlight-color);
+    font-size: 30px;
+}
+.servicesboxes h3{
+    text-transform: uppercase;
+}
+.servicesboxes:nth-of-type(1){
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../assets/img/bg/services1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.servicesboxes:nth-of-type(2){
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../assets/img/bg/bagan3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.servicesboxes:nth-of-type(3){
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../assets/img/bg/services3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.servicesboxes:nth-of-type(4){
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../assets/img/bg/services4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.servicesboxes:nth-of-type(5){
+    height: 200px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../assets/img/bg/services5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.servicesboxes .serviceinfos{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    opacity: 0;
+
+}
+.serviceinfos p{
+    text-align: center;
+    padding: 20px;
+}
+.servicesboxes:hover .serviceinfos{
+    opacity: 1;
+    transition: all 0.5s;
+}
+/* End Servicesw Section */

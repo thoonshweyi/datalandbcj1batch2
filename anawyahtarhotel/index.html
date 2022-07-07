@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- jqueryui  css1 js1-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- flatpickr css1 js1 -->
+        <link href="./assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css"/>
         <!-- custome css -->
         <link href="./css/style.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -18,7 +20,7 @@
         <!-- Start Header -->
         <header class="">
             <!-- Start navbar -->
-            <nav class="navbar navbar-expand-lg p-3">
+            <nav class="navbar navbar-expand-lg p-3 fixed-top">
                 <a href="index.html" class="navbar-brand">
                     <img src="./assets/img/favicon/shwezigon.png" width="50px" class="mx-3" alt="shwezigon"/>
                     <span class="h3 fw-bold text-light">Anawyahtar <span class="fw-light h2 ms-2">Hotel</span></span>
@@ -43,8 +45,149 @@
                 </div>
             </nav>
             <!-- End navbar -->
+
+
+            <div class="banners">
+                <h2 class="h1 text-light text-center fw-bold mb-3">Reserve Your Holiday</h2>
+                <form action=""  method="">
+                    <ul class="list-inline text-light text-center checks">
+                        <li class="list-inline-item">
+                            <div class="form-group mb-3 mx-3">
+                                <label for="checkins">Check-in</label>
+                                <div class="inputparents">
+                                    <input type="date" name="checkins" id="checkininputs" class="" placeholder="Check-in Date"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="form-group mb-3 mx-3">
+                                <label for="checkout">Check-out</label>
+                                <div class="inputparents">
+                                    <input type="date" name="checkouts" id="checkoutinputs" class="" placeholder="Check-out Date"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="form-group mb-4 mx-3">
+                                <label for="guests">Guests</label>
+                                <div class="guestsparents">
+                                    <input type="number" name="guests" id="guestinputs" class="" value="1" placeholder="Number of guests" readonly/>
+                                    <button class="guestbtns upbtns"><i class="fas fa-angle-up"></i></button>
+                                    <button class="guestbtns downbtns"><i class="fas fa-angle-down"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <input type="button" name="checkbtns" id="checkbtns" class="mx-3" value="Check Availability" />
+                        </li>
+                        
+                        
+                    </ul>
+                </form>
+                
+            </div>
         </header>
         <!-- End Header -->
+
+        <!-- Start Adv Section -->
+        <section class="advsections p-4">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 overflow-hidden">
+                        <div class="d-flex flex-wrap justify-content-center px-lg-5 px-md-5">
+                            <div class="hexagonboxes one fromlefts" style="background-image: url('./assets/img/bg/bagan1.jpg');"></div>
+                            <div class="hexagonboxes two fromtops" style="background-image: url('./assets/img/bg/bagan2.jpg');"></div>
+                            <div class="hexagonboxes three fromrights" style="background-image: url('./assets/img/bg/bagan3.jpg');"></div>
+                            <div class="hexagonboxes four frombottoms" style="background-image: url('./assets/img/bg/bagan4.jpg');"></div>
+                            <div class="hexagonboxes five frombottoms" style="background-image: url('./assets/img/bg/bagan5.jpg');"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  text-light">
+                        <h1 class="h2 text-center">The best hotel in <span class="text-uppercase">Bagan</span> since 1995</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <!-- End Adv Section -->
+
+        <!-- Start Service Section -->
+        <!-- 
+            free wifi
+            restaurant and bar
+            fitness and spa
+            loundry
+            swimming pool 12
+         -->
+         <section class="py-3">
+            <div class="container-fluid">
+                <!-- start title -->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>Our Services</h2>
+                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+                <!-- end title -->
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 servicesboxes" >
+                        <i class="fas fa-wifi"></i>
+                        <h3>Free Wifi</h3>
+
+                        <div class="serviceinfos">
+                            <h1>Free Wifi</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 servicesboxes">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Restaurant & Bar</h3>
+
+                        <div class="serviceinfos">
+                            <h1>Restaurant & Bar</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 servicesboxes">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Fitness & Spa</h3>
+
+                        <div class="serviceinfos">
+                            <h1>Fitness & Spa</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 servicesboxes">
+                        <i class="fas fa-tshirt"></i>
+                        <h3>Laundry</h3>
+
+                        <div class="serviceinfos">
+                            <h1>Laundry</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                    <div class="col-12 servicesboxes">
+                        <i class="fas fa-swimmer"></i>
+                        <h3>Swimming Pool</h3>
+
+                        <div class="serviceinfos">
+                            <h1>Swimming Pool</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <!-- End Service Section -->
+
+        <!-- Start Room Section -->
+        <!-- <section class="p-3 rooms">
+            <div class="container">
+                
+            </div>
+        </section> -->
+        <!-- End Room Section -->
 
         <!-- bootstrap css1 js1 -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js" integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -52,6 +195,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- jqueryui  css1 js1-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- flatpickr css1 js1 -->
+        <script src="./assets/libs/flatpickr/flatpickr.js" type="text/javascript"></script>
         <!-- custome js -->
         <script src="./js/app.js" type="text/javascript"></script>
     </body>

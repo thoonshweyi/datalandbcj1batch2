@@ -37,6 +37,33 @@ $(document).ready(function(){
             $('.filters').not('.'+getfiltervalue).hide('slide',500);
         }
     });
+
+    //for image overlay (or) lightbox2
+    // https://lokeshdhakar.com/projects/lightbox2/#getting-started
+    // #add data-lightbox = '' and data-title = '' inside a tag
+
+    lightbox.option({
+        positionFromTop : 200
+    })
+
     // End Properties
+
+
+
+    // Start Adv Section
+    $(window).scroll(function(){
+        var getscrolltop = $(this).scrollTop();
+        console.log(getscrolltop);
+        if(getscrolltop >= 1100){
+            $('.advimages').addClass('fromlefts');
+            $('.advtexts').addClass('fromrights');
+        }else{
+            $('.advimages').removeClass('fromlefts');
+            $('.advtexts').removeClass('fromrights');
+
+        }
+
+    });
+    // End Adv Section
 
 });
