@@ -137,7 +137,7 @@ header{
 
 /* End Header */
 
-/* Start Adv Section */
+/* Start AboutUs Section */
 .advsections{
     background: linear-gradient(
         var(--primary-color),
@@ -213,9 +213,45 @@ header{
         transform: translate(0);
     }
 }
-/* End Adv Section */
+/* End AboutUs Section */
 
 /* Start Services Section */
+
+/* start title */
+.titles{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+
+    position: relative;
+}
+/* .titles::before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+
+    position: absolute;
+    left: -50px;
+    bottom: 0;
+}
+.titles::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+} */
+
+
+/* end title */
 .servicesboxes{
     height: 500px;
     color: #fff;
@@ -295,4 +331,20 @@ header{
     opacity: 1;
     transition: all 0.5s;
 }
-/* End Servicesw Section */
+/* End Services Section */
+
+/* Start ContactUs Section */
+.contactimg{
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+
+    position: relative;
+}
+.contactimg:nth-of-type(2){
+    left: 50px;
+    top: -80px;
+    z-index: -1;
+    /* transform: translate(10%,-50%); */
+}
+/* End ContactUs Section */

@@ -1,2 +1,0 @@
--"list-inline"
--white-space : pre-wrap; //use with \A or \a for line break

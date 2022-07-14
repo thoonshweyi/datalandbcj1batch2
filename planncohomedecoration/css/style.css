@@ -10,6 +10,21 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
 }
+
+/* Start Back To Top */
+.btn-backtotops{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+}
+/* End Back To Top */
+
 /* Start Header */
 header{
     height: 100vh;
@@ -336,3 +351,124 @@ ul.clientlists li:hover{
     background-attachment: fixed;
 }
 /* End Customer */
+
+/* Start Request Quote */
+.qutoes{
+    background-color: var(--secondary-color);
+    padding: 30px 50px;
+    margin: -30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qutoes .infos{
+    display: flex;
+}
+.qutoes .btn-calls{
+    width: 170px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 50px;
+    border: 0;
+    border-radius: 100px;
+    padding: 0;/*cuz of bootstrap btn effect*/
+    transform: translateY(-1px);
+
+    transition: all 0.3s;
+}
+.qutoes .btn-calls:hover{
+    box-shadow: -3px 3px 3px #444;
+    transform: translateY(0px);
+}
+.phoneicon{
+    width: 30px;
+}
+@media (max-width:768px) {
+    .phoneicon{
+        width: 50px;
+    }
+}
+/* End Request Quote */
+
+/* Start Furniture Services */
+.furicons img{
+    width: 70px;
+}
+.furicons div:nth-of-type(even){
+    background-color: #f1f1f1;
+}
+/* End Furniture Services */
+
+/* Start Contact  */
+
+.contacts{
+    background-image: linear-gradient(
+        100deg,
+        rgba(0,0,0,0.9) 50%,
+        rgba(0,0,0,0.5) 30%,
+        transparent 70%
+    ),url('../assets/img/banner/banner3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contacts .inputs{
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    color: #fff;
+
+    transition: all 0.8s;
+}
+.contacts .inputs:focus{
+    box-shadow: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+.submit-btns{
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    transition: all 0.3s;
+}
+.submit-btns:hover{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.labels{
+    color: #e2e2e2;
+    display: block;
+    margin-top: -60px;
+    margin-left: 10px;
+
+    transition: all 0.5s;
+}
+
+.inputs:placeholder-shown + .labels{
+    opacity: 0;
+    /* visibility: hidden; */
+    transform: translateY(20px);
+}
+/* End Contact */
+
+/* Start Footer */
+
+.footerlinks{
+    color: #e2e2e2;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+.footerlinks:hover{
+    color: orange;
+    border-bottom: 1px solid orange;
+    letter-spacing: 1px;
+}
+/* End Footer */
+/* 14PC */

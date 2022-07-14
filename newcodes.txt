@@ -1,0 +1,20 @@
+Plancoo Home Decoraton Landing Page
+HTML
+<blockquote></blockquote> //for speech
+
+CSS
+-white-space : pre-wrap; //use with \A or \a for line break
+-.input:placeholder-shown + .labels {
+ 
+ }
+Bootstrap
+-'nav-bar'
+-'carousel'
+
+-'list-inline'
+-'list-unstyled'
+
+Library
+'lightbox2' for images at gallery section
+https://lokeshdhakar.com/projects/lightbox2/ 
+

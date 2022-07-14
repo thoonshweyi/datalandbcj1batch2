@@ -39,7 +39,7 @@ $(document).ready(function(){
 
     // End Header
 
-    //Start Adv Section
+    //Start AboutUs Section
     $(window).scroll(function(){
         var getscrolltop = $(this).scrollTop();
         // console.log(getscrolltop);
@@ -57,5 +57,5 @@ $(document).ready(function(){
             $('.hexagonboxes.five').removeClass('frombottoms');
         }
     });
-    // End Adv Section
+    // End AboutUs Section
 });
