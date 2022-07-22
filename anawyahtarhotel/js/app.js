@@ -10,8 +10,24 @@ $(document).ready(function(){
 
 
     // Start banner
-    $('#checkininputs,#checkoutinputs').flatpickr({
-        minDate : 'today'
+    // $('#checkininputs,#checkoutinputs').datepicker({
+    //     minDate : 'today'
+    // });
+
+    $('#checkininputs').datepicker({
+        minDate : 'today',
+        dateFormat : 'dd/mm/yy',
+        onClose : function(selectdate){
+            $('#checkoutinputs').datepicker('option','minDate',selectdate);
+        }
+    });
+
+    $('#checkoutinputs').datepicker({
+        minDate : 'today',
+        dateFormat : 'dd/mm/yy',
+        onClose : function(selectdate){
+            $('#checkininputs').datepicker('option','maxDate',selectdate);
+        }    
     });
 
     var guestinput = $('#guestinputs');
@@ -58,4 +74,48 @@ $(document).ready(function(){
         }
     });
     // End AboutUs Section
+
+
+    // Start Subscribe Section
+    
+    $('.contactimg:first').mousemove(function(e){
+        over(e,$('.contactimg:first'));
+    });
+    
+    $('.contactimg:last').mousemove(function(e){
+        over(e,$('.contactimg:last'));
+
+    });
+
+    $('.contactimg').mouseleave(function(){
+        $('.contactimg').css({
+            'transform' : 'rotateY(0deg)'
+        });
+    });
+ 
+    function over(e,ele){
+        var WIDTH = e.target.clientWidth;
+        var offsetX = ele.offset().left;
+        var clientX = e.clientX;
+
+        var x = clientX - offsetX;
+
+
+        if(x < WIDTH / 2){
+            $('.contactimg').css({
+                'transform' : 'rotateY(10deg)'
+            });
+            $('.contactimg:last').css({
+                'left' : '-50px'
+            });
+        }else{
+            $('.contactimg').css({
+                'transform' : 'rotateY(-10deg)'
+            });
+            $('.contactimg:last').css({
+                'left' : '50px'
+            });
+        }
+    }
+    // End Subscribe Section
 });

@@ -345,3 +345,49 @@ header{
     background-attachment: fixed;
 }
 /* End Customer */
+
+/* Start Request Section */
+.quotes{
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 30px 50px;
+    margin: -30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos .phoneicons{
+    width: 30px;
+}
+.quotes .btn-calls{
+    width: 170px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 50px;
+    padding: 0;
+
+    transform: translateY(-1px);
+    transition: all 0.5s;
+}
+.quotes .btn-calls:hover{
+    box-shadow: -3px 3px 3px #444;
+    transform: translateY(0);
+}
+/* End Request Section */
+
+/* Start Furniture Section */
+
+
+/* End Furniture Section */
