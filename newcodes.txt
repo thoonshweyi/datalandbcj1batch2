@@ -3,6 +3,7 @@ HTML
 <blockquote></blockquote> //for speech
 
 CSS
+-hsla(203, 100%, 13%, 1)  // color format
 -white-space : pre-wrap; //use with \A or \a for line break
 -.input:placeholder-shown + .labels {
  
@@ -18,3 +19,12 @@ Library
 'lightbox2' for images at gallery section
 https://lokeshdhakar.com/projects/lightbox2/ 
 
+
+Mention Hospital
+
+Bootstrap
+d-none d-sm-block //for display
+align-self-center //vertical center for itself *target's parent must display:flex;
+
+Library
+'lightslider' for slide image

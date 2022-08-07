@@ -1,0 +1,123 @@
+HTML---
+<!-- Start AboutUs Section -->
+        <section id="aboutuss" class="advsections p-4">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 overflow-hidden">
+                        <div class="d-flex flex-wrap justify-content-center px-lg-5 px-md-5">
+                            <div class="hexagonboxes one fromlefts" style="background-image: url('./assets/img/bg/bagan1.jpg');"></div>
+                            <div class="hexagonboxes two fromtops" style="background-image: url('./assets/img/bg/bagan2.jpg');"></div>
+                            <div class="hexagonboxes three fromrights" style="background-image: url('./assets/img/bg/bagan3.jpg');"></div>
+                            <div class="hexagonboxes four frombottoms" style="background-image: url('./assets/img/bg/bagan4.jpg');"></div>
+                            <div class="hexagonboxes five frombottoms" style="background-image: url('./assets/img/bg/bagan5.jpg');"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  text-light">
+                        <h1 class="h2 text-center">The best hotel in <span class="text-uppercase">Bagan</span> since 1995</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>  
+                </div>
+            </div>
+        </section>
+<!-- End AboutUs Section -->
+
+CSS---
+/* Start AboutUs Section */
+.advsections{
+    background: linear-gradient(
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+.hexagonboxes{
+    width: 150px;
+    height: 150px;
+    background-color: var(--highlight-color);
+    /* border: 3px solid var(--highlight-color); */
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    shape-outside: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    margin: 2px;
+
+    /* background-image: url('../assets/img/bg/bagan.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+.fromlefts{
+    animation: fromleftani 0.9s;
+}
+.fromrights{
+    animation: fromrightani 0.9s;
+}
+.fromtops{
+    animation: fromtopani 0.9s;
+}
+.frombottoms{
+    animation: frombottomani 0.9s;
+}
+
+@keyframes fromleftani {
+    0%{
+        opacity: 0;
+        transform: translate(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes fromrightani {
+    0%{
+        opacity: 0;
+        transform: translate(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes fromtopani {
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes frombottomani {
+    0%{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+/* End AboutUs Section */
+
+
+--JS
+//Start AboutUs Section
+    $(window).scroll(function(){
+        var getscrolltop = $(this).scrollTop();
+        // console.log(getscrolltop);
+        if(getscrolltop >= 100){
+            $('.hexagonboxes.one').addClass('fromlefts');
+            $('.hexagonboxes.two').addClass('fromtops');
+            $('.hexagonboxes.three').addClass('fromrights');
+            $('.hexagonboxes.four').addClass('frombottoms');
+            $('.hexagonboxes.five').addClass('frombottoms');
+        }else{
+            $('.hexagonboxes.one').removeClass('fromlefts');
+            $('.hexagonboxes.two').removeClass('fromtops');
+            $('.hexagonboxes.three').removeClass('fromrights');
+            $('.hexagonboxes.four').removeClass('frombottoms');
+            $('.hexagonboxes.five').removeClass('frombottoms');
+        }
+    });
+// End AboutUs Section

@@ -1,0 +1,113 @@
+        <!-- Start About Us Section -->
+        <section id="aboutuss" class="p-5 aboutuss">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center">
+                            <div class="imgboxs">
+                                <div class="imgdivs"></div>
+                                <div class="imgdivs"></div>
+                                <div class="imgdivs"></div>
+                                <div class="imgdivs"></div>
+                            </div>
+                            <div class="imgboxs">
+                                <div class="imgdivs"></div>
+                                <div class="imgdivs"></div>
+                                <div class="imgdivs"></div>
+                                <div class="imgdivs"></div>
+                            </div>
+                    </div>
+                    <div class="col-lg-6">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Us Section -->
+
+
+
+/* Start AboutUs Section */
+.aboutuss{
+    background: linear-gradient(
+        var(--primary-color),
+        var(--secondary-color)
+    );
+}
+.imgboxs{
+    width: 200px;
+    height: 200px;
+    /* background-color: red; */
+
+    display: flex;
+    flex-wrap: wrap;
+
+    transform: rotate(-45deg);
+}
+.imgboxs:nth-of-type(2){
+    margin-left: -57px;
+
+    position: relative;
+    z-index: -1;
+}
+.imgdivs{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: transform 0.3s;
+}
+.imgdivs::before{
+    content: '';
+    width: 200%;
+    height: 200%;
+    background-image: url('../assets/img/bg/bagan1.jpg');
+    background-size: cover;
+
+    transform: translate(-50%,-50%) rotate(45deg);
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.imgdivs:nth-of-type(1)::before{
+    background-image: url('../assets/img/bg/bagan1.jpg');
+    background-size: cover;
+}
+.imgdivs:nth-of-type(2)::before{
+    background-image: url('../assets/img/bg/bagan2.jpg');
+    background-size: cover;
+}
+.imgdivs:nth-of-type(3)::before{
+    background-image: url('../assets/img/bg/bagan3.jpg');
+    background-size: cover;
+}
+.imgdivs:nth-of-type(4)::before{
+    background-image: url('../assets/img/bg/bagan4.jpg');
+    background-size: cover;
+}
+.imgdivs:nth-of-type(5)::before{
+    background-image: url('../assets/img/bg/bagan5.jpg');
+    background-size: cover;
+}
+.imgdivs:nth-of-type(6)::before{
+    background-image: url('../assets/img/bg/services1.jpg');
+    background-size: cover;
+}
+.imgdivs:nth-of-type(7)::before{
+    background-image: url('../assets/img/bg/services3.jpg');
+    background-size: cover;
+}
+.imgdivs:nth-of-type(8)::before{
+    background-image: url('../assets/img/bg/services4.jpg');
+    background-size: cover;
+}
+.imgdivs:hover{
+    transform: scale(1.3);
+    z-index: 10;
+}
+/* End AboutUs Section */

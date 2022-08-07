@@ -1,0 +1,22 @@
+1.navbar
+2.carousel banner section ---
+3.reserve section
+4.room section
+5.service section
+6.gallery section
+7.subscribe section
+8.footer section ---
+
+js 
+navbar
+reserve
+subscribe
+
+
+
+About Golden Rose Guest House
+Golden Rose Guest House provides a 24-hour reception, as well as luggage storage and free Wi-Fi. Additionally, the multilingual staff are on hand to provide local information.
+
+The guest house features 19 air conditioned rooms filled with all the necessities to ensure a comfortable stay. Guests can relax in the homely seating area.
+
+Golden Rose Guest House is within walking distance of Bagan. It is also perfectly located in close proximity to a range of eateries.

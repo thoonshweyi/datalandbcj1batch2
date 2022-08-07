@@ -6,6 +6,16 @@ $(document).ready(function(){
     $('.navbuttons').click(function(){
         $('.navbuttons').toggleClass('navactives');
     });
+    $(window).scroll(function(){
+        var getscrollpoint = $(this).scrollTop();
+        // console.log(getscrollpoint);
+
+        if(getscrollpoint >= 200){
+            $('.navbar').addClass('compresses');
+        }else{
+            $('.navbar').removeClass('compresses');
+        }
+    });
     // End navbar
 
 
@@ -55,26 +65,7 @@ $(document).ready(function(){
 
     // End Header
 
-    //Start AboutUs Section
-    $(window).scroll(function(){
-        var getscrolltop = $(this).scrollTop();
-        // console.log(getscrolltop);
-        if(getscrolltop >= 100){
-            $('.hexagonboxes.one').addClass('fromlefts');
-            $('.hexagonboxes.two').addClass('fromtops');
-            $('.hexagonboxes.three').addClass('fromrights');
-            $('.hexagonboxes.four').addClass('frombottoms');
-            $('.hexagonboxes.five').addClass('frombottoms');
-        }else{
-            $('.hexagonboxes.one').removeClass('fromlefts');
-            $('.hexagonboxes.two').removeClass('fromtops');
-            $('.hexagonboxes.three').removeClass('fromrights');
-            $('.hexagonboxes.four').removeClass('frombottoms');
-            $('.hexagonboxes.five').removeClass('frombottoms');
-        }
-    });
-    // End AboutUs Section
-
+    
 
     // Start Subscribe Section
     
