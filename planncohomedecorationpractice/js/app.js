@@ -33,8 +33,9 @@ $(document).ready(function(){
         if(getfiltervalue === 'all'){
             $('.filters').show('slide',500);
         }else{
+            $('.filters').hide();
             $('.filters').filter('.'+getfiltervalue).show('slide',500);
-            $('.filters').not('.'+getfiltervalue).hide('slide',500);
+            // $('.filters').not('.'+getfiltervalue).hide('slide',500);
         }
     });
 

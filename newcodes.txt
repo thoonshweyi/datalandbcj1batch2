@@ -15,6 +15,10 @@ Bootstrap
 -'list-inline'
 -'list-unstyled'
 
+jQuery
+gallery
+
+
 Library
 'lightbox2' for images at gallery section
 https://lokeshdhakar.com/projects/lightbox2/ 
@@ -22,9 +26,20 @@ https://lokeshdhakar.com/projects/lightbox2/
 
 Mention Hospital
 
+CSS
+display:grid;
+place-item:center;
+
 Bootstrap
 d-none d-sm-block //for display
 align-self-center //vertical center for itself *target's parent must display:flex;
 
+Js/Jq
+scrollprogress
+videomodal
+
+Dialog Box Video Play
+
 Library
 'lightslider' for slide image
+http://sachinchoolur.github.io/lightslider/
