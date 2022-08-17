@@ -9,6 +9,20 @@ body{
     margin: 0;
 }
 
+/* Start BackToTop Btn */
+.back2topbtn{
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+}
+/* End BackToTop Btn */
+
 /* Start Header */
 header{
     height: 100vh;
@@ -388,6 +402,74 @@ header{
 /* End Request Section */
 
 /* Start Furniture Section */
-
+.furicons img{
+    width: 70px;
+}
+.furicons div:nth-of-type(even){
+    background-color: #eee;
+}
 
 /* End Furniture Section */
+
+/* Start Contact Section */
+.contacts{
+    background: linear-gradient(
+        100deg,
+        rgba(0,0,0,0.8) 50%,
+        rgba(0,0,0,0.1) 50%
+    ),url('../assets/img/banner/banner3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.inputs{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #eee;
+    border-radius: 0;
+    color: #fff;
+
+    transition: border-bottom 0.5s;
+}
+.inputs:focus{
+    background-color: transparent;
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: none;
+    color: #fff;
+}
+.labels{
+    color: #f4f4f4;
+    display: block;
+    margin: -60px 10px;
+
+    transition: all 0.5s;
+}
+.inputs:placeholder-shown + .labels{
+    transform: translate(0px, 50px);
+    opacity: 0;
+}
+.submit-btns{
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    transition: all 0.3s;
+}
+.submit-btns:hover{
+    background-color: var(--secondary-color);
+}
+/* End Contact Section */
+
+/* Start Footer Section */
+.footer-links{
+    color: #e2e2e2;
+    font-size: 13px;
+    text-decoration: none;
+
+    transition: all 0.5s;
+}
+.footer-links:hover{
+    color: orange;
+    border-bottom: 1px solid orange;
+    letter-spacing: 1px;
+}
+
+/* End Footer Section */

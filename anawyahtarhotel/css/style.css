@@ -13,7 +13,7 @@ body{
 }
 /* Start Header */
 header{
-    height: 100vh;
+    /* height: 100vh; */
 
     background: url('../assets/img/bg/headerbg.jpg');
     background-size: cover;
@@ -350,6 +350,11 @@ header{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+
+}
+.imagecontainers{
+    perspective: 600px;
 }
 .contactimg{
     width: 80%;
@@ -373,10 +378,38 @@ header{
 
 .subscribeboxs{
     /* height: 400px; */
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--highlight-color);
+    color: #fff;
     padding: 20px;
 }
-.subscribes{
+.subscriboxs-body label{
+    transform: translate(10px,-55px);
+    font-weight: bold;
+
+    transition: all 0.5s;
+}
+.subscriboxs-body input:placeholder-shown + label{
+    opacity: 0;
+    transform: translate(30px, -10px);
+}
+.subscriboxs-body input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #eee;
+    border-radius: 0;
+    color: #fff;
+}
+.subscriboxs-body input::placeholder{
+    color: #ddd;
+}
+.subscriboxs-body input:focus{
+    background: transparent;
+    border-bottom: 2px solid var(--primary-color);
+    color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+.subscriboxs-titles{
     background: linear-gradient(
         -70deg,
         var(--primary-color) 70%,
@@ -388,7 +421,6 @@ header{
     padding: 10px;
     margin-bottom: 20px;
 }
-
 .subscribebtn{
     display: inline-block;
     background-color: var(--primary-color);
@@ -396,3 +428,28 @@ header{
     margin: auto;    
 }
 /* End Subscribe Section */
+
+/* Start Banner Carousel */
+.banner-carousels{
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+
+    position: relative;
+}
+.banner-carousels-bodys{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.banner-carousels:nth-child(1){
+    background-image: url('../assets/img/bg/headerbg.jpg');
+}
+.banner-carousels:nth-child(2){
+    background-image: url('../assets/img/rooms/deluxeroom.jpg');
+}
+.banner-carousels:nth-child(3){
+    background-image: url('../assets/img/rooms/doubleroomgarden.jpg');
+}
+/* End Banner Carousel */

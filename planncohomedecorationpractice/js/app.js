@@ -1,5 +1,18 @@
 $(document).ready(function(){
     
+    // Start BackToTop Btn
+    $('.back2topbtn').hide();
+
+    $(window).scroll(function(){
+        var getscrolltop = $(this).scrollTop();
+        
+        if(getscrolltop >= 370){
+            $('.back2topbtn').fadeIn(1000);
+        }else{
+            $('.back2topbtn').fadeOut(1000);
+        }
+    });
+    // End BackToTop Btn
 
     // Start Header
         // Start navbar
@@ -66,5 +79,10 @@ $(document).ready(function(){
 
     });
     // End Adv Section
+
+    // Start Footer Section
+    $('#getyear').text(new Date().getUTCFullYear());
+
+    // End Footer Section
 
 });
