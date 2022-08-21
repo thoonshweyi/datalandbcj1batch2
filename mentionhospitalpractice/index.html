@@ -17,6 +17,12 @@
     </head>
     <body>
 
+        <!-- Start Progress -->
+        <div class="progresses">
+            <span class="progressvalues">0%</span>
+        </div>
+        <!-- End Progress -->
+
        <!-- Start Header Intro Section -->
         <section class="headerintro visiblelgs">
             <div class="container infos">
@@ -156,12 +162,12 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 align-self-center infotexts fromlefts">
+                    <div class="col-md-6 align-self-center infotexts">
                         <h4>WE ENSURE CARE FOR YOU WITH BEST QUALITY SERVICE GUARANTEED</h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                         <a href="#" class="btn btn-lg btn-blues">Make Appointment</a>
                     </div>
-                    <div class="col-md-6 text-center text-md-end infoimgs fromrights">
+                    <div class="col-md-6 text-center text-md-end infoimgs">
                         <img src="./assets/img/users/faqs.png" width="300px" alt="staff"/>
                     </div>
                 </div>
@@ -179,7 +185,7 @@
                         <h3><a href="tel:09422042242" class="nav-link text-uppercase">Call Now (95) 94220 - 42242</a></h3>
                     </div>
                     <div class="col-md-6 text-center">
-                        <a href="#"><i class="fas fa-play fa-3x"></i></a>
+                        <a href="#vdmodal" id="playbtns" data-bs-target="#vdmodal" data-bs-toggle="modal" data-video="https://www.youtube.com/embed/2kyPgu03pgE"><i class="fas fa-play fa-3x"></i></a>
                         <h1>See What We Do</h1>
                     </div>
                 </div>
@@ -317,8 +323,236 @@
         <!-- End Premises Section -->
 
         <!-- Start Pricing Section -->
-        <section></section>
+        <section id="pricing" class="py-3">
+            <div class="container">
+                <!-- Start title -->
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h4>Our Pricing</h4>
+                        <span>Our best price offer</span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <!-- End title -->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 cardones">
+                        <div class="pricingcards">
+                            <div class="pricingheaders">
+                                <h3>Blood Test</h3>
+                            </div>
+                            <div class="pricingbodys">
+                                <div class="prices"><span><sup>$</sup>142</span></div>
+                                <div class="pricingfeatures">
+                                    <ul>
+                                        <li>Cholesterol and lipid tests</li>
+                                        <li>Oestrogen blood test</li>
+                                        <li>Thyroid function tests</li>
+                                        <li>Kidney function tests</li>
+                                        <li>C-reactive protein (CRP) test</li>
+                                        <li>Cholesterol and lipid tests</li>
+                                        <li>Oestrogen blood test</li>
+                                        <li>Thyroid function tests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pricingfooters">
+                                <a href="#" class="btn btn-pricings">Appointment Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 cardtwos">
+                        <div class="pricingcards">
+                            <div class="pricingheaders">
+                                <h3>Body CT Scan</h3>
+                            </div>
+                            <div class="pricingbodys">
+                                <div class="prices"><span><sup>$</sup>350</span></div>
+                                <div class="pricingfeatures">
+                                    <ul>
+                                        <li>Cholesterol and lipid tests</li>
+                                        <li>Oestrogen blood test</li>
+                                        <li>Thyroid function tests</li>
+                                        <li>Kidney function tests</li>
+                                        <li>C-reactive protein (CRP) test</li>
+                                        <li>Cholesterol and lipid tests</li>
+                                        <li>Oestrogen blood test</li>
+                                        <li>Thyroid function tests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pricingfooters">
+                                <a href="#" class="btn btn-pricings">Appointment Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 cardthrees">
+                        <div class="pricingcards">
+                            <div class="pricingheaders">
+                                <h3>Urine Test</h3>
+                            </div>
+                            <div class="pricingbodys">
+                                <div class="prices"><span><sup>$</sup>125</span></div>
+                                <div class="pricingfeatures">
+                                    <ul>
+                                        <li>Cholesterol and lipid tests</li>
+                                        <li>Oestrogen blood test</li>
+                                        <li>Thyroid function tests</li>
+                                        <li>Kidney function tests</li>
+                                        <li>C-reactive protein (CRP) test</li>
+                                        <li>Cholesterol and lipid tests</li>
+                                        <li>Oestrogen blood test</li>
+                                        <li>Thyroid function tests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pricingfooters">
+                                <a href="#" class="btn btn-pricings">Appointment Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- End Pricing Section -->
+
+        <!-- Start Join Us Section -->
+        <section id="faqs" class="py-5">
+            <div class="container">
+                <!-- Start title -->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h4>JOIN US TODAY</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <!-- End title -->
+
+                <div class="row">
+                    <div class="col-lg-4 instructorforms">
+                        <h4>Instructor Form</h4>
+                        <form action="" method="">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name"/>
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Your Email"/>
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone"/>
+                            <textarea name="bio" id="bio" class="form-control" rows="5"></textarea>
+                            <div class="d-grid mt-3">
+                                <button type="submit" class="btn btn-primary btn-lg rounded-0">Join Us Today</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-8">
+                        <div id="accordion">
+                            <h3>Why should I should I join your team?</h3>
+                            <div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+                        
+                            <h3>What would you gain on your team?</h3>
+                            <div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+                        
+                            <h3>Can I get paid?</h3>
+                            <div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+
+                            <h3>How many days I need to work?</h3>
+                            <div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+
+                            <h3>How can I give support for students?</h3>
+                            <div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+
+                            <h3>Membership is free to join?</h3>
+                            <div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+
+                            <h3>Where I need to join the team?</h3>
+                            <div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start Join Us Section -->
+
+        <!-- Start Footer Section -->
+        <section class="bg-dark text-light px-5">
+            <div class="container-fluid">
+                <div class="row py-4">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <h5 class="mb-3"><img src="./assets/img/fav/favicon2.png" width="70px" alt="fav"> Mention Hospital</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-phone"></i> +95 94220 42242</li>
+                            <li><i class="fas fa-envelope"></i> admin@mentionhospital.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 60st,Mandalay,Myanmar.</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <h5 class="mb-3">Visit Us</h5>
+                        <div class="socialicons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <h5 class="mb-3">Support</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-uppercase footerlinks">Documentation</a></li>
+                            <li><a href="#" class="text-uppercase footerlinks">Faqs</a></li>
+                            <li><a href="#" class="text-uppercase footerlinks">Condition</a></li>
+                            <li><a href="#" class="text-uppercase footerlinks">Get Codes</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <h5 class="mb-3">Download App : </h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="nav-link">Google Play Store</a></li>
+                            <li><a href="#" class="nav-link">Apple Store</a></li>
+                            <li><a href="#" class="nav-link">Direct Link</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center border-top pt-4">
+                        <p>&copy; <span id="getyear"></span> Copyright, Inc. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Footer Section -->
+
+        <!-- Start Modal Area -->
+            <!-- Start video modal -->
+            <div id="vdmodal" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        <iframe src="" width="100%" height="350" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- End vidio modal -->
+        <!-- End Modal Area -->
 
         <!-- bootstrap css1 js1 -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

@@ -2,6 +2,35 @@
 body{
     font-family: 'Quicksand', sans-serif;
 }
+/* Start Progress */
+.progresses{
+    width: 50px;
+    height: 50px;
+    /* background-color: steelblue; */
+    border-radius: 50%;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    /* display: grid;
+    place-items: center; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressvalues{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+
+    display: grid;
+    place-items: center;
+}
+/* End Progress */
 
 /* Start Header Intro */
 .headerintro{
@@ -203,3 +232,139 @@ body{
     opacity: 1;
 }
 /* End Department Section */
+
+/* Start Pricing Section */
+.pricingcards{
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+
+    transition: all 0.5s;
+}
+.pricingheaders{
+    padding: 40px 20px;
+    border-bottom: 2px solid #eee;
+}
+.prices{
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.pricingfeatures ul li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+.btn-pricings{
+    background: linear-gradient(
+        -90deg,
+        skyblue,
+        blue
+    );
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+
+    padding: 10px 30px;
+}
+.btn-pricings:hover{
+    background: linear-gradient(
+        90deg,
+        skyblue,
+        blue
+    );
+    color: #fff;
+}
+
+.pricingcards:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+.pricingcards:hover .pricingheaders{
+    background: linear-gradient(
+        90deg,
+        skyblue,
+        blue
+    );
+    color: #fff;
+}
+
+.movelefts{
+    animation-name: moveleftani;
+    animation-duration: 2s;
+}
+.movebottoms{
+    animation-name: movebottomani;
+    animation-duration: 2s;
+}
+.moverights{
+    animation-name: moverightani;
+    animation-duration: 2s;
+}
+
+@keyframes moveleftani {
+    0%{
+        transform: translate(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes movebottomani {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes moverightani {
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+/* End Pricing Section */
+
+/* Start Join Us Section */
+.instructorforms{
+    border: 2px solid #ddd;
+    padding: 30px;
+    
+}
+/* End Join Us Section */
+
+/* Start Footer Section */
+.socialicons a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 5px;
+    margin: 0 5px;
+}
+.socialicons a:hover{
+    background-color: blue;
+}
+.footerlinks{
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+
+    transition: all 0.5s;
+}
+.footerlinks:hover{
+    border-bottom: 1px solid orange;
+    color: orange;
+    letter-spacing: 1px;
+}
+/* End Footer Section */
